@@ -1,12 +1,12 @@
 pipeline {
     agent any
     environment {
-        VERCEL_TOKEN = credentials('vercel-token') // Cargar el token desde Jenkins
+        VERCEL_TOKEN = credentials('vercel-token')
     }
     stages {
         stage('Checkout') {
             steps {
-                git 'https://github.com/TU_USUARIO/TU_REPO.git' // Reemplázalo con tu repo real
+                git 'https://github.com/TU_USUARIO/TU_REPO.git'
             }
         }
         stage('Install Dependencies') {

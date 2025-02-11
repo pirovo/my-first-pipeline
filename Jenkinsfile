@@ -6,7 +6,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git 'https://github.com/TU_USUARIO/TU_REPO.git'
+                git 'https://github.com/pirovo/my-first-pipeline.git'
             }
         }
         stage('Install Dependencies') {

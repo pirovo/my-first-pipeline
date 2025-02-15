@@ -3,7 +3,7 @@ agent any
 stages {
 stage('Build') {
 steps {
-sh 'npm install --unsafe-perm'
+sh 'npm install'
 sh 'npm run build'
 }
 }

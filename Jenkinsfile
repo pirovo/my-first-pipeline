@@ -5,7 +5,10 @@ stage('Build') {
 steps {
 sh 'node -v'
 sh 'npm -v'
-sh 'npm install'
+sh 'npm cache clean --force'
+sh 'npm install -g npm@8'
+
+//sh 'npm install'
 sh 'npm run build'
 }
 }

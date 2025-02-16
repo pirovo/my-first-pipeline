@@ -4,7 +4,7 @@ stages {
 stage('Build') {
 steps {
 sh 'npm cache clean --force'
-sh 'npm ci'
+sh 'npm install --legacy-peer-deps'
 sh 'npm run build'
 }
 }

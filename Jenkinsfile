@@ -10,7 +10,7 @@ sh 'npm install --legacy-peer-deps'
 stage('Deploy') {
 steps {
 withCredentials([string(credentialsId: 'vercel-token', variable: 'VERCEL_TOKEN')]) {
-sh 'vercel --token $VERCEL_TOKEN --prod'
+sh 'vercel --token $VERCEL_TOKEN --prod --yes'
 }
 }
 }
